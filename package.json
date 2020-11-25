@@ -11,7 +11,7 @@
   },
   "scripts": {
     "check": "terraform fmt -check -recursive -diff",
-    "format": "terraform fmt -recursive -diff",
+    "format": "terraform fmt -recursive -diff"
   },
   "husky": {
     "skipCI": true,
@@ -32,7 +32,7 @@
       [
         "@semantic-release/exec",
         {
-          "successCmd": "git push --mirror git@github.com:Adaptavist/terraform-module-aws-route53-zone.git"
+          "successCmd": "git push --mirror git@github.com:Adaptavist/terraform-module-aws-delegate-route53-zone.git"
         }
       ]
     ]
