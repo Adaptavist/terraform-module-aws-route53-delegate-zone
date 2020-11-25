@@ -1,0 +1,20 @@
+image: adaptavist/all-tools:openjdk11-latest-0.13.5
+
+definitions:
+  release: &release
+    name: Release
+    caches:
+      - node
+    script:
+      - npm install --save-dev
+      - npx semantic-release -r ${BITBUCKET_GIT_HTTP_ORIGIN}
+      # semantic release will perform S3 sync if successful
+
+pipelines:
+  default:
+    - step:
+        script:
+          - terraform fmt -check -recursive -diff
+  branches:
+    master:
+      - step: *release
