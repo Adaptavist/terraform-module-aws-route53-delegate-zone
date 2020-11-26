@@ -32,7 +32,7 @@
       [
         "@semantic-release/exec",
         {
-          "successCmd": "git push --mirror git@github.com:Adaptavist/terraform-module-aws-delegate-route53-zone.git"
+          "successCmd": "git push --mirror git@github.com:Adaptavist/terraform-module-aws-route53-delegate-zone.git"
         }
       ]
     ]
