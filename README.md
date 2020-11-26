@@ -31,4 +31,3 @@ Module creates:
 | main\_route53\_record\_name | The name of the record in the main account |
 | workload\_route53\_record\_fqdn | The FQDN of the record in the workload account |
 | workload\_route53\_record\_name | The name of the record in the workload account |
-
