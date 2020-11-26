@@ -27,6 +27,6 @@ variable "main_route53_zone_name" {
 }
 
 variable "ttl" {
-  default     = string
+  type        = string
   description = "The TTL of the record"
 }
