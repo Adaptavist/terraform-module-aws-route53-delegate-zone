@@ -1,3 +1,10 @@
+## [1.3.4](http://bitbucket.org/adaptavistlabs/module-aws-route53-delegate-zone/compare/v1.3.3...v1.3.4) (2020-11-27)
+
+
+### Bug Fixes
+
+* fixed output params ([1f5ef0d](http://bitbucket.org/adaptavistlabs/module-aws-route53-delegate-zone/commits/1f5ef0da28cc791d0f3d084e098eef68ea48da1c))
+
 ## [1.3.3](http://bitbucket.org/adaptavistlabs/module-aws-route53-delegate-zone/compare/v1.3.2...v1.3.3) (2020-11-27)
 
 
