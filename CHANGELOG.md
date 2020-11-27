@@ -1,3 +1,10 @@
+## [1.3.3](http://bitbucket.org/adaptavistlabs/module-aws-route53-delegate-zone/compare/v1.3.2...v1.3.3) (2020-11-27)
+
+
+### Bug Fixes
+
+* removed workload record set as it gets created with the zone by default ([32f57f9](http://bitbucket.org/adaptavistlabs/module-aws-route53-delegate-zone/commits/32f57f995819efa0419789f6894bbabbf3288421))
+
 ## [1.3.2](http://bitbucket.org/adaptavistlabs/module-aws-route53-delegate-zone/compare/v1.3.1...v1.3.2) (2020-11-27)
 
 
