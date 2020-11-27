@@ -1,10 +1,18 @@
+provider "aws" {
+  alias = "main"
+}
+
+provider "aws" {
+  alias = "workload"
+}
+
 data "aws_route53_zone" "main_zone" {
-  provider = "aws.main"
+  provider = aws.main
   name     = var.main_route53_zone_name
 }
 
 resource "aws_route53_zone" "workload_zone" {
-  provider = "aws.workload"
+  provider = aws.workload
 
   name          = var.zone_name
   comment       = var.comment
@@ -14,7 +22,7 @@ resource "aws_route53_zone" "workload_zone" {
 }
 
 resource "aws_route53_record" "workload" {
-  provider = "aws.workload"
+  provider = aws.workload
 
   zone_id = aws_route53_zone.workload_zone.zone_id
   name    = var.zone_name
@@ -24,7 +32,7 @@ resource "aws_route53_record" "workload" {
 }
 
 resource "aws_route53_record" "main" {
-  provider = "aws.main"
+  provider = aws.main
 
   zone_id = data.aws_route53_zone.main_zone.zone_id
   name    = var.zone_name
