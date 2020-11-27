@@ -21,16 +21,6 @@ resource "aws_route53_zone" "workload_zone" {
   tags = var.tags
 }
 
-resource "aws_route53_record" "workload" {
-  provider = aws.workload
-
-  zone_id = aws_route53_zone.workload_zone.zone_id
-  name    = var.zone_name
-  type    = "NS"
-  records = aws_route53_zone.workload_zone.name_servers
-  ttl     = var.ttl
-}
-
 resource "aws_route53_record" "main" {
   provider = aws.main
 
